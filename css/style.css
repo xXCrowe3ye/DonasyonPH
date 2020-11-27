@@ -1,0 +1,47 @@
+body {
+  margin-top: 105px; }
+
+.navbar {
+  box-shadow: 2px 2px 5px rgba(67,183,102,0.80);
+  opacity: 0.9;
+  background: #fff; }
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem; }
+
+#front {
+  position: relative;
+  background: url("../img/mountains.jpg");
+  min-height: 600px; }
+  #front .primary-overlay {
+    background-color: rgba(67,183,102,0.80);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid; }
+
+#Donations img {
+  margin-top: -50px; }
+#Donations .card:hover {
+  background: rgba(67,183,102,0.80);
+  color: #fff; }
+#Donations .fab {
+  color: #fff; }
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px; }
+    #showcase h1 {
+      font-size: 4rem; }
+
+  .mb-resp {
+    margin-bottom: 1rem; } }
+
+
