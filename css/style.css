@@ -11,7 +11,7 @@ body {
 
 #front {
   position: relative;
-  background: url("../img/mountains.jpg");
+  background: url("../img/kids.jpg");
   min-height: 600px; }
   #front .primary-overlay {
     background-color: rgba(67,183,102,0.80);
