@@ -8,7 +8,7 @@
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Donation Site</title>
+  <title>Donasyon.PH</title>
 </head>
 
 <body id="home" data-spy="scroll" data-target="#main-nav">
@@ -16,7 +16,7 @@
     <div class="container">
       <a href="#home" class="navbar-brand">
         <img src="img/mlogo.png" width="50" height="50" alt="">
-        <h3 class="d-inline align-middle">Pangalan ko</h3>
+        <h3 class="d-inline align-middle" id="logo-text">Donasyon.PH</h3>
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -45,15 +45,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-center">
-            <h1 class="display-2 mt-5 pt-5">
-              Donate na kayo please lang
+            <h1 class="display-2 mt-5 pt-5" id="headline">
+              <strong>Donate</strong> for a good cause.
             </h1>
-            <p class="lead">Pang upgrade ng pc ko for streaming!</p>
-            <a href="#" class="btn btn-outline-secondary btn-lg text-white">
-              <i class="fas fa-arrow-right"></i> yEEEt
+            <p class="lead">We can't help everyone, but everyone can help somebody</p>
+            <a href="#Donations" class="btn btn-outline-light btn-lg bg-warning text-dark">
+              <i class="fas fa-arrow-right"></i> Donate now
             </a>
             <div>
-
+              <div class="col-lg-6">
+                <!-- Dito mo lagay yan-->
+              </div>
             </div>
           </div>
         </div>
@@ -79,38 +81,46 @@
     </div>
   </section>
 
-  <section id="box" class="py-5">
+  <section id="box" class="py-5 text-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <div class="card text-center border-primary mb-resp">
+        <div class="col">
+            <h1 class="text-primary pb-3">
+             Latest Donation Drives </h1>
+          </div>
+    <div class="container">
+      <div class="row">
+        <div class="card-deck">
+          <div class="card">
+            <img src="img/ulysses pic.jpg" class="card-img-top" alt="Donation drive ulysses">
             <div class="card-body">
-              <h3 class="text-primary">Marawi</h3>
-              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              <h5 class="card-title">Typhoon Ulysses</h5>
+              <p class="card-text">DonationPH delivered essential items on the people who are affected by the recent typhoon.</p>
+              <p class="card-text"><small class="text-muted">Nov 12, 2020</small></p>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center bg-primary text-white mb-resp green">
+          <div class="card">
+            <img src="img/kids-timeline.jpg" class="card-img-top" alt="Kids smiling on the camera">
             <div class="card-body">
-              <h3>Cagayan</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              <h5 class="card-title">Kids Charity Event</h5>
+              <p class="card-text">Through the power of your donations. Children in need we're given out foods, clothes and other items for their needs.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center border-primary mb-resp">
+          <div class="card">
+            <img src="img/school-timeline.jpg" class="card-img-top" alt=" Kids waving at the camera.">
             <div class="card-body">
-              <h3 class="text-primary">Batanes</h3>
-              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              <h5 class="card-title">School Donation Drives</h5>
+              <p class="card-text">DonationPH gave out school supplies for students in selected schools.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center bg-primary text-white">
+          <div class="card">
+            <img src="img/covid-timeline.jpg" class="card-img-top" alt="Face masks and other items in a box">
             <div class="card-body">
-              <h3>Taal</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              <h5 class="card-title">Covid Donation Drive</h5>
+              <p class="card-text">With the funds we received from donations, We're able to give out face masks and other items that would help frontliners to have supplies and be safe.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
@@ -126,8 +136,10 @@
             <h1 class="text-primary pb-3">
               Why Our Foundation </h1>
             <p class="lead pb-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati alias rerum dolore fugiat
-              debitis?
+              By donating at DonasyonPH, you are not just helping one person or one city, but countless people who needed you're help and care.<br>
+              2020 has been a challenge for us in different aspects, on the other hand, there are countless people who do not have anything that makes us want to help them for a better future. 
+              We do not just work, but helps to encourage, protect, and support them in their lives.<br>
+              If our team, DonasyonPH, and you will work together, everyone can strive for happiness and fair life, as well as a better future for our country.
             </p>
           </div>
 
@@ -142,12 +154,11 @@
 
               <div id="collapse1" class="collapse show">
                 <div class="card-body">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi
-                  dolores nobis mollitia
-                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae
-                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo,
-                  deleniti
-                  facilis consequatur tenetur nam pariatur fuga nisi!
+                  DonasyonPH is a trustworthy team that helps people in need. 
+                  We do not have the authority to use your donations for our own desires and not even a single cent will be placed in our pockets. 
+                  As well as that, DonasyonPH will use your donations directly to our donation drives and aims to provide relief/essential goods to lend a hand to those who needed help. 
+                  Donating can give people a sense of hope through this act of kindness and generosity. 
+                  Every peso donated from the heart is worthy of every utmost thanks.
                 </div>
               </div>
             </div>
@@ -163,12 +174,9 @@
 
               <div id="collapse2" class="collapse">
                 <div class="card-body">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi
-                  dolores nobis mollitia
-                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae
-                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo,
-                  deleniti
-                  facilis consequatur tenetur nam pariatur fuga nisi!
+                  We serve people because we all deserve to have a fair and better life, as well as to have a better future for our country. 
+                  We serve to fight underprivileged life for the people who do not have the basic supplies that are needed in order to survive. 
+                  We also serve to gave them what they needed and to have their life with happiness that they are also important. 
                 </div>
               </div>
             </div>
@@ -177,18 +185,15 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <div href="#collapse3" data-toggle="collapse" data-parent="#col-bar">
-                    <i class="fas fa-arrow-circle-down"></i> &nbsp;*Walang maisip* </div>
+                    <i class="fas fa-arrow-circle-down"></i> &nbsp; Our Goals </div>
                 </h5>
               </div>
 
               <div id="collapse3" class="collapse">
                 <div class="card-body">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi
-                  dolores nobis mollitia
-                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae
-                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo,
-                  deleniti
-                  facilis consequatur tenetur nam pariatur fuga nisi!
+                  Our goal is to help, but not just to help but to protect, support, and encourage people who needed it for their better future. 
+                  As well as to give their basic supplies needed to survive, like shelter, food, and water. 
+                  Along with, preparing an emergency involves risk monitoring, planning, and establishing how to deliver assistance and protection.
                 </div>
               </div>
             </div>
@@ -217,11 +222,10 @@
         <div class="col-lg-3 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="img/pic1.jpg" alt="" class="img-fluid  w-50 mb-3">
-              <h3>Ako</h3>
-              <h5 class="text-muted">na&nbsp;</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
+              <img src="img/pic1.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h5 class="text-muted donation-title">Feed the&nbsp;</h5>
+              <h3>Children & Homeless</h3>
+              <p>To provide daily proper food for the children who are in an orphanage as well as to the homeless.</p>
               <div class="d-flex justify-content-center">
                 <div class="p-4">
                   <button class="btn btn-primary btn-lg btn-block">
@@ -237,11 +241,10 @@
         <div class="col-lg-3 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="img/pic2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>Lang</h3>
-              <h5 class="text-muted">mahal</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
+              <img src="img/pic2.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h5 class="text-muted donation-title">Donate to</h5>
+              <h3>Typhoon <br> victims</h3>
+              <p>To provide relief items, basic supplies, vital services, and life-saving emergency assistance.</p>
               <div class="d-flex justify-content-center">
                 <div class="p-4">
                   <button class="btn btn-primary btn-lg btn-block">
@@ -257,11 +260,10 @@
         <div class="col-lg-3 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="img/pic3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>To</h3>
-              <h5 class="text-muted">na maha&nbsp;</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
+              <img src="img/pic3.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h5 class="text-muted donation-title">Help the&nbsp;</h5>
+              <h3>Students & Teachers</h3>
+              <p>To provide students and teachers who are underpriviledge an education assistance.</p>
               <div class="d-flex justify-content-center">
                 <div class="p-4">
                   <button class="btn btn-primary btn-lg btn-block">
@@ -277,11 +279,10 @@
         <div class="col-lg-3 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="img/pic4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>Si Natoy</h3>
-              <h5 class="text-muted">ka</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
+              <img src="img/pic4.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h5 class="text-muted donation-title">Donate to</h5>
+              <h3>Covid-19 <br> safety</h3>
+              <p>To provide tools and equipments needed for covid-19 patients in the healthcare facilities.</p>
               <div class="d-flex justify-content-center">
                 <div class="p-4">
                   <button class="btn btn-primary btn-lg btn-block">
