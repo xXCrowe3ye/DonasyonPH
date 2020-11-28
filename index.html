@@ -40,23 +40,90 @@
     </div>
   </nav>
 
- <section id="front" class="py-5">
+
+  <section id="front" class="py-5">
     <div class="primary-overlay text-white">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-center">
-           <h1 class="display-2 mt-5 pt-5" id="headline">
+            <h1 class="display-2 mt-5 pt-5" id="headline">
               <strong>Donate</strong> for a good cause.
             </h1>
             <p class="lead">We can't help everyone, but everyone can help somebody</p>
             <a href="#Donations" class="btn btn-outline-light btn-lg bg-warning text-dark">
               <i class="fas fa-arrow-right"></i> Donate now
+        
             </a>
           </div>
           <div class="col-lg-6">
 
             <!--lagay mo dito-->
-            
+            <div class="wrapper">
+              <div class="title">
+                Personal Information
+              </div>
+              <div class="form">
+                <div class="inputfield">
+                  <label>Name</label>
+                  <input type="text" class="input">
+                </div>
+                <div class="inputfield">
+                  <label>Email</label>
+                  <input type="text" class="input">
+                </div>
+                <div class="inputfield">
+                  <label>Contact No.</label>
+                  <input type="text" class="input">
+                </div>
+                <div class="inputfield">
+                  <label>Address</label>
+                  <input type="text" class="input">
+                </div>
+                <div class="inputfield">
+                  <label>City</label>
+                  <input type="text" class="input">
+                </div>
+                <div class="title">
+                  Donation Type
+                </div>
+                <div class="inputfield">
+                  <label>Donation Type</label>
+                  <div id="donations" class="custom_select">
+                    <select onchange="changeStatus()" id="donate">
+                      <option value="#">Select</option>
+                      <option value="Cash">Cash</option>
+                      <option value="Food">Food</option>
+                      <option value="necessities">Other necessities</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="inputfield" class="data" id="amount">
+                  <label>Amount</label>
+                  <input type="text" class="input"></input>
+                </div>
+                <div class="inputfield" class="data" id="Foodtype">
+                  <label>Food type</label>
+                  <input type="text" class="input"></input>
+                </div>
+                <div class="inputfield" class="data" id="quantity1">
+                  <label>Quantity</label>
+                  <input type="text" class="input"></input>
+                </div>
+                <div class="inputfield" class="data" id="necessity">
+                  <label>Other necessities</label>
+                  <input type="text" class="input"></input>
+                </div>
+                <div class="inputfield" class="data" id="quantity2">
+                  <label>Quantity</label>
+                  <input type="text" class="input"></input>
+                </div>
+
+                <div class="inputfield">
+                  <input type="submit" value="Donate" class="btn">
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -85,47 +152,50 @@
     <div class="container">
       <div class="row">
         <div class="col">
-            <h1 class="text-primary pb-3">
-             Latest Donation Drives </h1>
-          </div>
-    <div class="container">
-      <div class="row">
-        <div class="card-deck">
-          <div class="card">
-            <img src="img/ulysses pic.jpg" class="card-img-top" alt="Donation drive ulysses">
-            <div class="card-body">
-              <h5 class="card-title">Typhoon Ulysses</h5>
-              <p class="card-text">DonationPH delivered essential items on the people who are affected by the recent typhoon.</p>
-              <p class="card-text"><small class="text-muted">Nov 12, 2020</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/kids-timeline.jpg" class="card-img-top" alt="Kids smiling on the camera">
-            <div class="card-body">
-              <h5 class="card-title">Kids Charity Event</h5>
-              <p class="card-text">Through the power of your donations. Children in need we're given out foods, clothes and other items for their needs.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/school-timeline.jpg" class="card-img-top" alt=" Kids waving at the camera.">
-            <div class="card-body">
-              <h5 class="card-title">School Donation Drives</h5>
-              <p class="card-text">DonationPH gave out school supplies for students in selected schools.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/covid-timeline.jpg" class="card-img-top" alt="Face masks and other items in a box">
-            <div class="card-body">
-              <h5 class="card-title">Covid Donation Drive</h5>
-              <p class="card-text">With the funds we received from donations, We're able to give out face masks and other items that would help frontliners to have supplies and be safe.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h1 class="text-primary pb-3">
+            Latest Donation Drives </h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="card-deck">
+              <div class="card">
+                <img src="img/ulysses pic.jpg" class="card-img-top" alt="Donation drive ulysses">
+                <div class="card-body">
+                  <h5 class="card-title">Typhoon Ulysses</h5>
+                  <p class="card-text">DonationPH delivered essential items on the people who are affected by the recent
+                    typhoon.</p>
+                  <p class="card-text"><small class="text-muted">Nov 12, 2020</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/kids-timeline.jpg" class="card-img-top" alt="Kids smiling on the camera">
+                <div class="card-body">
+                  <h5 class="card-title">Kids Charity Event</h5>
+                  <p class="card-text">Through the power of your donations. Children in need we're given out foods,
+                    clothes and other items for their needs.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/school-timeline.jpg" class="card-img-top" alt=" Kids waving at the camera.">
+                <div class="card-body">
+                  <h5 class="card-title">School Donation Drives</h5>
+                  <p class="card-text">DonationPH gave out school supplies for students in selected schools.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/covid-timeline.jpg" class="card-img-top" alt="Face masks and other items in a box">
+                <div class="card-body">
+                  <h5 class="card-title">Covid Donation Drive</h5>
+                  <p class="card-text">With the funds we received from donations, We're able to give out face masks and
+                    other items that would help frontliners to have supplies and be safe.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
   </section>
 
   <section id="about" class="py-5 text-center bg-light">
@@ -136,10 +206,13 @@
             <h1 class="text-primary pb-3">
               Why Our Foundation </h1>
             <p class="lead pb-3">
-              By donating at DonasyonPH, you are not just helping one person or one city, but countless people who needed you're help and care.<br>
-              2020 has been a challenge for us in different aspects, on the other hand, there are countless people who do not have anything that makes us want to help them for a better future. 
+              By donating at DonasyonPH, you are not just helping one person or one city, but countless people who
+              needed you're help and care.<br>
+              2020 has been a challenge for us in different aspects, on the other hand, there are countless people who
+              do not have anything that makes us want to help them for a better future.
               We do not just work, but helps to encourage, protect, and support them in their lives.<br>
-              If our team, DonasyonPH, and you will work together, everyone can strive for happiness and fair life, as well as a better future for our country.
+              If our team, DonasyonPH, and you will work together, everyone can strive for happiness and fair life, as
+              well as a better future for our country.
             </p>
           </div>
 
@@ -154,10 +227,12 @@
 
               <div id="collapse1" class="collapse show">
                 <div class="card-body">
-                  DonasyonPH is a trustworthy team that helps people in need. 
-                  We do not have the authority to use your donations for our own desires and not even a single cent will be placed in our pockets. 
-                  As well as that, DonasyonPH will use your donations directly to our donation drives and aims to provide relief/essential goods to lend a hand to those who needed help. 
-                  Donating can give people a sense of hope through this act of kindness and generosity. 
+                  DonasyonPH is a trustworthy team that helps people in need.
+                  We do not have the authority to use your donations for our own desires and not even a single cent will
+                  be placed in our pockets.
+                  As well as that, DonasyonPH will use your donations directly to our donation drives and aims to
+                  provide relief/essential goods to lend a hand to those who needed help.
+                  Donating can give people a sense of hope through this act of kindness and generosity.
                   Every peso donated from the heart is worthy of every utmost thanks.
                 </div>
               </div>
@@ -174,9 +249,12 @@
 
               <div id="collapse2" class="collapse">
                 <div class="card-body">
-                  We serve people because we all deserve to have a fair and better life, as well as to have a better future for our country. 
-                  We serve to fight underprivileged life for the people who do not have the basic supplies that are needed in order to survive. 
-                  We also serve to gave them what they needed and to have their life with happiness that they are also important. 
+                  We serve people because we all deserve to have a fair and better life, as well as to have a better
+                  future for our country.
+                  We serve to fight underprivileged life for the people who do not have the basic supplies that are
+                  needed in order to survive.
+                  We also serve to gave them what they needed and to have their life with happiness that they are also
+                  important.
                 </div>
               </div>
             </div>
@@ -191,9 +269,11 @@
 
               <div id="collapse3" class="collapse">
                 <div class="card-body">
-                  Our goal is to help, but not just to help but to protect, support, and encourage people who needed it for their better future. 
-                  As well as to give their basic supplies needed to survive, like shelter, food, and water. 
-                  Along with, preparing an emergency involves risk monitoring, planning, and establishing how to deliver assistance and protection.
+                  Our goal is to help, but not just to help but to protect, support, and encourage people who needed it
+                  for their better future.
+                  As well as to give their basic supplies needed to survive, like shelter, food, and water.
+                  Along with, preparing an emergency involves risk monitoring, planning, and establishing how to deliver
+                  assistance and protection.
                 </div>
               </div>
             </div>
@@ -356,6 +436,47 @@
     </div>
   </footer>
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+  <script>bubbly({
+      colorStart: "#fff4e6",
+      colorStop: "#ffe9e4",
+      blur: 1,
+      compose: "source-over",
+      bubbleFunc: () => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+    });;
+  </script>
+  <script>
+    function changeStatus() {
+      var status = document.getElementById("donate");
+
+      if (status.value == "Cash") {
+        document.getElementById("amount").style.display = "block";
+      }
+      else {
+        document.getElementById("amount").style.display = "none";
+      }
+
+      if (status.value == "Food") {
+        document.getElementById("Foodtype").style.display = "block";
+        document.getElementById("quantity1").style.display = "block";
+      }
+      else {
+        document.getElementById("Foodtype").style.display = "none";
+        document.getElementById("quantity1").style.display = "none";
+      }
+
+      if (status.value == "necessities") {
+        document.getElementById("necessity").style.display = "block";
+        document.getElementById("quantity2").style.display = "block";
+      }
+      else {
+        document.getElementById("necessity").style.display = "none";
+        document.getElementById("quantity2").style.display = "none";
+      }
+    }
+  </script>
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
